@@ -1,0 +1,110 @@
+.terms-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-family-sans, 'Inter', sans-serif);
+}
+
+.terms-mesh-bg-1 {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, rgba(45,212,191,0.15) 0%, rgba(255,255,255,0) 70%);
+  z-index: 1;
+}
+
+.terms-mesh-bg-2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(255,255,255,0) 70%);
+  z-index: 1;
+}
+
+.terms-content {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+  padding: 8rem 2rem 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.terms-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(45, 212, 191, 0.2);
+  color: #0F766E;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(45, 212, 191, 0.08);
+}
+
+.terms-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+}
+
+.terms-subtitle {
+  font-size: 1.1rem;
+  color: #4B5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.terms-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.terms-section {
+  margin-bottom: 2.5rem;
+}
+
+.terms-section:last-child {
+  margin-bottom: 0;
+}
+
+.terms-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.terms-section-text {
+  font-size: 1rem;
+  color: #4B5563;
+  line-height: 1.7;
+}
+
+.terms-section-text + .terms-section-text {
+  margin-top: 1rem;
+}
