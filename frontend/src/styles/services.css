@@ -1,0 +1,203 @@
+.bpo-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.bpo-content {
+    flex: 1;
+    width: 100%;
+    background-color: #e0f2fe;
+    padding: 8rem 2rem 4rem 2rem;
+}
+
+.bpo-hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bpo-text-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.bpo-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a2333;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.bpo-subtitle {
+    font-size: 1.1rem;
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.bpo-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+}
+
+.bpo-features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #4B5563;
+    font-weight: 500;
+}
+
+.check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    color: #0284C7;
+    border-radius: 50%;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.bpo-cta-btn {
+    background-color: #0070c9;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.bpo-cta-btn:hover {
+    background-color: #005bb5;
+}
+
+.bpo-image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bpo-hero-image {
+    width: 100%;
+    max-width: 600px;
+    max-height: 380px;
+    margin-top: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .bpo-hero-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .bpo-text-content,
+    .bpo-image-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bpo-hero-image {
+        margin-top: 0;
+    }
+
+    .bpo-title {
+        font-size: 2rem;
+    }
+}
+
+/* Theme: ERP Solutions */
+.theme-erp .bpo-content {
+    background-color: #FFC0CB;
+}
+
+.theme-erp .bpo-title {
+    color: #0f2441;
+}
+
+.theme-erp .bpo-subtitle {
+    color: #596b82;
+}
+
+.theme-erp .check-icon {
+    background-color: #e6f0fa;
+    color: #0070c9;
+}
+
+.theme-erp .bpo-features-list li span:last-child {
+    color: #4a5b73;
+    font-weight: 500;
+}
+
+.theme-erp .bpo-cta-btn {
+    border-radius: 4px;
+}
+
+/* Theme: Software Development */
+.theme-dev .bpo-content {
+    background-color: #eded96;
+}
+
+.theme-dev .bpo-title {
+    color: #111827;
+}
+
+.theme-dev .bpo-subtitle {
+    color: #4B5563;
+}
+
+.theme-dev .check-icon {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.theme-dev .bpo-features-list li span:last-child {
+    color: #4B5563;
+    font-weight: 500;
+}
+
+.theme-dev .bpo-cta-btn {
+    border-radius: 4px;
+    background-color: #0284c7;
+}
+
+/* Theme: BPO Services */
+.theme-bpo .bpo-content { background-color: #CCEAFF; }
+.theme-bpo .bpo-title { color: #1a2333; }
+.theme-bpo .bpo-subtitle { color: #4B5563; }
+.theme-bpo .check-icon { background-color: #ffffff; color: #0284C7; }
+.theme-bpo .bpo-features-list li span:last-child { color: #4B5563; font-weight: normal; }
+
+/* Theme: Cloud & Infrastructure */
+.theme-cloud .bpo-content { background-color: #CFF0DD; }
+.theme-cloud .bpo-title { color: #0f2441; }
+.theme-cloud .bpo-subtitle { color: #596b82; }
+.theme-cloud .check-icon { background-color: #e6f0fa; color: #0070c9; }
+.theme-cloud .bpo-features-list li span:last-child { color: #4a5b73; font-weight: 500; }
+.theme-cloud .bpo-cta-btn { border-radius: 4px; }
+
+/* Theme: IT Consulting */
+.theme-it .bpo-content { background-color: #DFE2FA; }
+.theme-it .bpo-title { color: #0f2441; }
+.theme-it .bpo-subtitle { color: #596b82; }
+.theme-it .check-icon { background-color: #e6f0fa; color: #0070c9; }
+.theme-it .bpo-features-list li span:last-child { color: #4a5b73; font-weight: 500; }
+.theme-it .bpo-cta-btn { border-radius: 4px; }

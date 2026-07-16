@@ -4,7 +4,7 @@ import '../styles/contact.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const Contact = () => {
+const Contact = ({ hideNavAndFooter = false }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Message sent successfully!');
@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
+      {!hideNavAndFooter && <Navbar />}
       <div className="contact-page-container">
         <div className="contact-layout">
 
@@ -137,7 +137,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {!hideNavAndFooter && <Footer />}
     </>
   );
 };

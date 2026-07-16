@@ -1,6 +1,6 @@
 :root {
   /* Color Palette - Brand */
-  --primary-color: #2DD4BF;
+  --primary-color: #34D399;
   /* Teal/Mint */
   --primary-hover: #14B8A6;
   --primary-dark: #0F766E;
@@ -9,7 +9,7 @@
   --secondary-hover: #1F2937;
 
   --gradient-start: #34D399;
-  --gradient-end: #2DD4BF;
+  --gradient-end: #34D399;
 
   --danger-color: #EF4444;
   --danger-hover: #DC2626;

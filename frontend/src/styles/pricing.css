@@ -1,0 +1,198 @@
+.pricing-page {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafbfc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-main {
+  flex: 1;
+  width: 100%;
+}
+
+.pricing-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pricing-hero {
+  margin-bottom: 3rem;
+  max-width: 650px;
+}
+
+.pricing-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #14B8A6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.pricing-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+  font-size: 1.1rem;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+/* Cards Section */
+.pricing-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .pricing-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.elite-card {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card-header {
+  margin-bottom: 2rem;
+}
+
+.elite-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-stack-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #14B8A6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.recommended-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #14B8A6;
+  background-color: #E6F8F5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.pricing-card-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card-desc {
+  font-size: 0.95rem;
+  color: #6B7280;
+  line-height: 1.4;
+}
+
+/* Features List */
+.pricing-features {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.pricing-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 1rem;
+}
+
+@media (max-width: 500px) {
+  .pricing-features-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pricing-features-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+  background-color: #fafbfc;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #f3f4f6;
+}
+
+.check-icon {
+  color: #14B8A6;
+  font-weight: 800;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer Button */
+.pricing-card-footer {
+  margin-top: auto;
+}
+
+.pricing-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pricing-contact-btn:hover {
+  background-color: #1f2937;
+  transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.pricing-contact-btn:hover .arrow {
+  transform: translateX(4px);
+}

@@ -26,7 +26,7 @@ const DashboardLayout = ({ children }) => {
           <div className="home-logo-box" style={{ width: '32px', height: '32px', fontSize: '0.9rem', borderRadius: '8px' }}>
             S2G
           </div>
-          <span className="home-brand-name" style={{ fontSize: '1.2rem' }}>SSquareG.</span>
+          <span className="home-brand-name" style={{ fontSize: '1.2rem' }}>S Square G Tech Solutions</span>
         </div>
 
         <nav className="dashboard-nav">

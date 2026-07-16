@@ -48,16 +48,16 @@ const AdminLogin = () => {
           <div className="form-group">
             <label className="form-label" htmlFor="password">Password</label>
             <div className="password-input-wrapper">
-              <input 
+              <input
                 type={showPassword ? "text" : "password"}
-                id="password" 
-                className="form-input" 
-                placeholder="••••••••" 
+                id="password"
+                className="form-input"
+                placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <button 
+              <button
                 type="button"
                 className="password-toggle-btn"
                 onClick={() => setShowPassword(!showPassword)}

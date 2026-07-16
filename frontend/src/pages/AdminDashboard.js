@@ -49,7 +49,7 @@ const AdminDashboard = () => {
       {/* Stats Grid */}
       <div className="stats-grid">
         {stats.map((stat, index) => (
-          <DashboardCard 
+          <DashboardCard
             key={index}
             title={stat.title}
             value={stat.value}
